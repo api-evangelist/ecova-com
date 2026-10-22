@@ -1,0 +1,14 @@
+generated: '2026-10-22'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.ecova.com
+  https: false
+domains:
+- domain: ecova.com
+  dnssec: false
+  caa:
+  - 0 issue "sectigo.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: none
